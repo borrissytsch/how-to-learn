@@ -27,7 +27,7 @@
   /* border-style: dashed; border-color: black;  /* 2 debug margs */
 } /* Именование блока 1 стр. 2, sizes p. 3  brief'a уделано */
 .logo_place_header {
-  position: :absolute;
+  position: absolute;
   margin-top: 30px;
   margin-left: 64px;
   z-index: 2;
@@ -87,7 +87,7 @@
 /* Страницы 2 3 4 brif'a уделаны; header done */
 /* ---------------------------------------------------------------- */
 .content {
-  margin 0;
+  margin: 0;
   font-weight: bold;
   /* border-style: solid; border-color: red; /* 2 debug margs */
  } /* Именование блока content стр. 1  brief'a уделано */
