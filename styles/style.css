@@ -7,25 +7,429 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
+} /* Страница 1 ОСТАЛИСЬ ПРОМЕЖУТКИ МЕЖДУ СЕКЦИЯМИ и цвета brief'a уделана (именования, размеры) */
+/* ---------------------------------------------------------------- */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
+  /* выше установили ограничения для секции, p. 3 brif'a, top - done */
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  overflow: hidden;                                         /* Рисунок с двойкой уплывал вниз, несмотря на 0-е отступы и все прочие незадокументированные потуги; но руки у женщины и пацана видны полностью */
+  background-color: #f2f2f2;
+  /* border-style: solid; border-color: red; /* 2 debug margs */
+} /* Именование заголовка стр. 1 brief'a, flex container & back color уделано */
+.logo {
+  width: 228px;
+  height: 32px;
+  /* border-style: dashed; border-color: black;  /* 2 debug margs */
+} /* Именование блока 1 стр. 2, sizes p. 3  brief'a уделано */
+.logo_place_header {
+  position: :absolute;
+  margin-top: 30px;
+  margin-left: 64px;
+  z-index: 2;
+} /* Именование modifier'a блока 1 стр. 2, pos'ing p.3 brief'a уделано */
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  width: 730px;
+  position: absolute;
+  left: 64px;
+  align-self: center;
+  z-index: 2;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование element'a 2 стр. 2, size, up-vis & pos'ing p.3 brief'a уделано */
+.header__title_font {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+} /* El-t appearance, p.4 brief'a done */
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование element'a 3 стр. 2, size, up-vis & pos'ing p.3 brief'a уделано */
+.header__subtitle_font {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: normal;
+} /* El-t appearance, p.4 brief'a done */
+.header__link {
+  line-height: 18px;
+  font-size: 18px;
+} /* Именование element'a 4 стр. 2  brief'a уделано */
+.header__main-illustration {
+   width: 765px;
+   height: 608px;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   background-image: url(../images/header-image.png);
+   background-size: contain;
+   /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование element'a 5 стр. 2, size, up-vis & pos'ing p.3 brief'a уделано */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+  background-color: #2f80ed;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование element'a 6 стр. 2, size, up-vis & pos'ing p.3 brief'a уделано */
+/* Страницы 2 3 4 brif'a уделаны; header done */
+/* ---------------------------------------------------------------- */
+.content {
+  margin 0;
+  font-weight: bold;
+  /* border-style: solid; border-color: red; /* 2 debug margs */
+ } /* Именование блока content стр. 1  brief'a уделано */
+ /* и элемента с модификатором вида ключ-значение */
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  background-color: white;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование блока description & margs 100 стр. 1 & 6, center align p. 6  brief'a уделано */
+.two-columns {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование блока description/two-columsn стр. 5 & wdth 80%, space between p. 6  brief'a уделано */
+.two-columns__brief {
+  width: 175px;
+  margin-top: 0;
+  /* border-style:dotted; border-color:blue;  /* 2 debug margs */
+} /* Именование элемента brief блока two-columns стр. 5 & width 175 p.6  brief'a уделано */
+.two-columns__brief_font {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+} /* модификатор шрифта стр. 7 brief'a уделано */
+.two-columns__main-text {
+  min-width: 784px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border-style:dotted; border-color:blue; /* 2 debug margs */
+} /* Именование элемента main-text блока two-columns стр. 5, width 80% & min wdth p.6 brief'a уделано */
+.two-columns__paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Именование элемента paragraph блока two-columns стр. 5, модификатор шрифта стр. 7 brief'a уделано */
+.two-columns__span-accent {
+  font-weight: 600;
+} /* Именование элемента span-accent блока two-columns стр. 5 модификатор шрифта стр. 7 brief'a уделано */
+.two-columns__paragraph_margs {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+/* pages 5-7 of brief & description уделаны */
+.digits {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  background-color: white;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование блока digits и зазор с Фейнманом стр. 1 9 brief'a уделано */
+.table_flex_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section_title {
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование блока section-title стр. 8 p. 15 brief'a уделано */
+.section_title_theme_dark {
+  color: white;
+  /* background-color: blue;                /* 2 dbg settings */
+} /* Именование тёмной темы для загововка блока стр. 14 brief'a уделано */
+.section_subtitle {
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование блока section-subtitle стр. 8 p. 15 brief'a уделано */
 
-/* и элемента с модификатором вида ключ-значение */
+.section_subtitle_theme_dark {
+  color: white;
+  /* background-color: blue;                /* 2 dbg settings */
+} /* Именование тёмной темы для подзагововка блока стр. 14 brief'a уделано */
+.section_title__capture {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Края заголовка section-title стр. 10  brief'a уделано */
+.section_title__capture_h {
+  font-size: 60px;
+} /* Modifier заголовка section-title стр. 8 10 16 brief'a уделано */
+.section_title__capture_s {
+  font-size: 24px;
+} /* Modifier верхнего подзаголовка section-title стр. 8 10 16 brief'a уделано */
+.section_title__capture_line {
+  line-height: 1.15;
+  font-weight: 600;
+} /* Спецификация строки верхнего заголовка, стр. 8 10 16 brief'a уделано */
+.section_subtitle__capture {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 34px;
+  /* font-size: 24px                      /* Ушло в модификатор */
+  font-weight: normal;
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Высота строки и шрифты section-subtitle стр. 10 16 brief'a уделано */
+.table {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  counter-reset: cellnum;                         /* will be used as cell counter 4 cell heads */
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование блока table стр. 8  brief'a уделано */
+.table_theme_dark {
+  color: white;
+  /* background-color: blue;                /* 2 dbg settings */
+} /* Именование тёмной темы для таблицы стр. 14 brief'a уделано */
+.table__cell {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 0;
+  counter-increment: cellnum;                     /* set cell counter 2 current value */
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Именование элемента table__cell стр. 8  brief'a уделано */
+.table__cell>.table__cell_numbered::before {
+  content: counter(cellnum);
+} /* Modifier 4 table cell ordnum output before a header text */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  /* background-color: blue;                /* 2  dbg settings */
+} /* Взято готовым из рыбы проекта; добавлена строка с цветом фона для отладки стр. 14 brief'a уделано */
+.table__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* font-size: 24px; */
+} /* Именование элемента table__heading стр. 8, head fnt p. 10  brief'a уделано */
+.table__heading_theme_dark {
+  color: white;
+  /* background-color: blue;                /* 2 dbg settings */
+} /* Именование тёмной темы для заголовка таблицы стр. 14 brief'a уделано */
+.table__text {
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+} /* Именование элемента table__text стр. 8, up mrg p. 9 & font p. 10 16 brief'a уделано */
+/* По стр. 10 включительно brief'a уделано */
+.table__text_theme_dark {
+  color: white;
+  /* background-color: blue;                /* 2 dbg settings */
+} /* Именование тёмной темы для текста таблицы стр. 14 brief'a уделано */
+.feynman {
+  width: vw;
+  height: calc(1.25*637px);         /*  637px Feynman photo height, see feynman__photo */
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование блока feynman стр. 1  brief'a уделано */
+.feynman__photo {
+  width: 867px;
+  height: calc(vh/1.25);              /* = 637px based on feynman block height */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
 }
+.feynman_headers_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+}
+.feynman__title {
+  width: 648px;
+  margin-top: 0;                    /* Подгонка краёв для Ф под кругом: calc(0.75/2*120px), это всё прибито гвоздями, общая формула не получается, проще просто 45px для шрифта 90px */
+  margin-left: 0;                   /* Подгонка краёв для Ф под кругом: calc(2*0.75*120px), это всё прибито гвоздями, общая формула не получается, проще просто 180px для шрифта 90px & 325px 4 120px font */
+  margin-bottom: 0;
+  text-align: center;
+  font-size: calc(1*120px);         /* Multiplier 0.75 2 move captuer from Feynman spot, чтобы Ф была под кругом, общая формула не получается, см. коммент для краёв */
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Именование element'a title блока feynman стр. 11  brief'a уделано */
+.feynman__subtitle {
+  margin-top: 70px;
+  margin-bottom: 0;
+  /* border-style:dotted; border-color:rebeccapurple; /* 2 debug margs */
+} /* Именование element'a subtitle блока feynman стр. 11  brief'a уделано */
+.feynman__subtitle_line_spec {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+} /* Line spec 4 non headers in feynman blck */
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  z-index: 1;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование element'a link блока feynman стр. 11  brief'a уделано */
+.kaufman {
+  margin-top: 0;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  position: relative;
+  overflow: hidden;
+  background-color:#1f1f1f;
+  /* color: white;                         /* ушло в модификатор */
+  /* border-style: dashed; border-color: black; /* 2 debug margs */
+} /* Именование блока kaufman стр. 1 padding p. 15 brief'a уделано */
+.table_position_ontop {
+  z-index: 1;
+}
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  /* border-style:double; border-color:aqua;     /* 2 debug margs */
+} /* Именование треугольника стр. 14 brief'a уделано */
+/* ---------------------------------------------------------------- */
+.footer {
+  min-height: 350px;
+  margin: 0; 
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  background-color:#1f1f1f;
+  color: white;
+  /* border-style: solid; border-color: red; /* /* 2 debug margs */
+} /* Именование блока footer стр. 1 18 brief'a уделано */
+.footer__columns {
+  margin: 0;
+  width: 90%;
+  display:flex;
+  flex-direction: row;
+  box-sizing: 50%;
+  justify-content: flex-start;
+  /* border-style: dashed; border-color: white; /* 2 debug margs */
+} /* Именование элемента columns стр. 18 brief'a уделано */
+.footer__column {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-basis: 711px;
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border-style:double; border-color:aqua; /* 2 debug margs */
+} /* Именование элемента column стр. 18 brief'a уделано */
+.footer__column_content_copyright {
+  justify-content: space-between;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование модификатора content_copyright 4 column стр. 18 brief'a уделано */
+.footer__columns>.footer__column.footer__column_content_copyright + * {
+  margin 0;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 711px;
+  gap: 0 15%;
+  justify-content: flex-end;
+} /* flex container after copyright'a */
+.footer__column_content_info {
+  max-width: 34%;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование модификатора content_info 4 column стр. 18 brief'a уделано */
+.footer__column_content_social {
+  max-width: 34%;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование модификатора content_social 4 column стр. 18 brief'a уделано */
+.logo_place_footer {
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование modifier'a блока 1 стр. 2 18 brief'a prepared */
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование элемента author font mrgs стр. 18 19 brief'a уделано */
+.footer__column-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование элемента column-heading, font & mrg стр. 18 19 brief'a уделано */
+.footer__column-links {
+  padding-bottom: 16px;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование элемента column-links & pdng стр. 18 brief'a уделано */
+.footer__column-link {
+  margin: 0;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование элемента column-link, font стр. 18 19 brief'a уделано */
+.footer__social-icon>[href] {
+  color: white;
+  text-decoration: none;
+} /* Remove decoration from social icon captrue */
+.footer__column-link>[href] {
+  color: white;
+  text-decoration: none;
+} /* Remove decoration from social's captrue */
+.footer__social-icon {
+  margin: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  /* border-style:dotted; border-color:cadetblue; /* 2 debug margs */
+} /* Именование элемента social-icon, icon size & rght mrg стр. 18 brief'a уделано */
