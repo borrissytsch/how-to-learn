@@ -8,6 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -19,29 +20,35 @@
   background-color: #f2f2f2;
   /* border-style: solid; border-color: red;  */
 }
+
 .logo {
   width: 228px;
   height: 32px;
   /* border-style: dashed; border-color: black; */
 }
+
 .logo_place_header {
+  margin: 0;
   position: absolute;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
   z-index: 2;
 }
+
 .header__title {
+  margin: 0;
   width: 730px;
-  position: absolute;
-  left: 64px;
+  margin-left: 64px;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
   z-index: 2;
-  /* border-style: dashed; border-color: black;  */
+  /* border-style: dashed; border-color: black; */
 }
+
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   left: 64px;
@@ -52,22 +59,30 @@
   z-index: 2;
   /* border-style: dashed; border-color: black; */
 }
+
 .header__link {
+  margin: 0;
+  color: #2f80ed;
   line-height: 18px;
   font-size: 18px;
+  text-decoration: none;
 }
+
 .header__main-illustration {
-   width: 765px;
-   height: 608px;
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   z-index: 1;
-   background-image: url(../images/header-image.png);
-   background-size: contain;
-   /* border-style: dashed; border-color: black;  */
+  margin: 0;
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url(../images/header-image.png);
+  background-size: contain;
+  /* border-style: dashed; border-color: black;  */
 }
+
 .header__square-pic {
+  margin: 0;
   height: 568px;
   width: 568px;
   position: absolute;
@@ -77,11 +92,13 @@
   background-color: #2f80ed;
   /* border-style: dashed; border-color: black;  */
 }
+
 .content {
   margin: 0;
   font-weight: bold;
   /* border-style: solid; border-color: red;  */
  }
+
  .description {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -91,14 +108,18 @@
   background-color: white;
   /* border-style: dashed; border-color: black;  */
 }
+
 .two-columns {
+  margin: 0;
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* border-style:double; border-color:aqua;  */
 }
+
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   margin-top: 0;
   line-height: 1.2;
@@ -107,6 +128,7 @@
   color: #2f80ed;
   /* border-style:dotted; border-color:blue;  */
 }
+
 .two-columns__main-text {
   min-width: 784px;
   width: 80%;
@@ -115,20 +137,20 @@
   align-items: flex-start;
   /* border-style:dotted; border-color:blue;  */
 }
+
 .two-columns__paragraph {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  /* border-style:dotted; border-color:rebeccapurple; */
+  /* border-style:dotted; border-color:rebeccapurple;  */
 }
-.two-columns__main-text>.two-columns__paragraph:last-of-type {
-  margin-bottom: 0;
-}
+
 .two-columns__span-accent {
   font-weight: 600;
 }
+
 .digits {
   margin-top: 0px;
   margin-bottom: 100px;
@@ -139,10 +161,10 @@
   justify-content: flex-start;
   /* border-style: dashed; border-color: black; */
 }
+
 .section-title {
   width: 60%;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,17 +172,19 @@
   font-weight: 600;
   font-size: 60px;
   /* border-style:double; border-color:aqua;  */
-} 
+}
+
 .section-title_theme_dark {
   margin: 0;
   z-index: 1;
   color: white;
   /* background-color: blue;                 */
 }
+
 .section-subtitle {
   width: 60%;
+  margin: 0;
   margin-top: 20px;
-  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,11 +193,14 @@
   font-size: 24px;
   /* border-style:double; border-color:aqua;  */
 }
+
 .section-subtitle_theme_dark {
+  margin: 0;
   color: white;
   z-index: 1;
-  /* background-color: blue;                */
+  /* background-color: blue; */
 }
+
 .table {
   width: 1100px;
   margin-top: 0;
@@ -186,14 +213,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-  counter-reset: cellnum;                                                         /* will be used as cell counter 4 cell heads */
-  /* border-style:double; border-color:aqua; */
+  /* border-style:double; border-color:aqua;  */
 }
+
 .table_theme_dark {
   color: white;
   z-index: 1;
   /* background-color: blue;                */
 }
+
 .table__cell {
   width: 250px;
   display: flex;
@@ -201,12 +229,9 @@
   margin-top: 60px;
   margin-left: 0;
   margin-bottom: 0;
-  counter-increment: cellnum;                                                     /* set cell counter 2 current value */
   /* border-style:dotted; border-color:rebeccapurple; */
 }
-.table__cell>.table__cell_numbered::before {
-  content: counter(cellnum);
-}                                                                                 /* Modifier 4 table cell ordnum output before a header text */
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -214,31 +239,35 @@
   margin-top: 80px;
   /* background-color: blue;                */
 }
+
 .table__heading {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   line-height: 1.15;
   font-weight: 600;
   font-size: 24px;
 }
+
 .table__heading_theme_dark {
   color: white;
   /* background-color: blue;                */
 }
+
 .table__text {
+  margin: 0;
   margin-top: 20px;
-  margin-bottom: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
 .table__text_theme_dark {
   color: white;
   /* background-color: blue;                */
 }
+
 .feynman {
   width: vw;
-  height: calc(1.25*637px);                                                     /*  637px Feynman photo height, see feynman__photo */
+  height: 796.25px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -250,46 +279,53 @@
   background-color: #f2f2f2;
   /* border-style: dashed; border-color: black;  */
 }
+
 .feynman__photo {
   width: 867px;
-  height: calc(vh/1.25);                                                        /* = 637px based on feynman block height */
+  height: 637px;
   position: absolute;
   left: 0;
   bottom: 0;
   /* border-style:double; border-color:aqua; */
 }
+
 .feynman__title {
   width: 648px;
-  margin-top: 0;                                                                /* Подгонка краёв для Ф под кругом: calc(0.75/2*120px), это всё прибито гвоздями, общая формула не получается, проще просто 45px для шрифта 90px */
-  margin-left: 0;                                                               /* Подгонка краёв для Ф под кругом: calc(2*0.75*120px), это всё прибито гвоздями, общая формула не получается, проще просто 180px для шрифта 90px & 325px 4 120px font */
+  margin-top: 0;
+  margin-left: 300px;
   margin-right: 0;
   margin-bottom: 0;
   text-align: center;
   line-height: 1.15;
   font-weight: 600;
-  font-size: calc(1*120px);                                                     /* Multiplier 0.75 2 move captuer from Feynman spot, чтобы Ф была под кругом, общая формула не получается, см. коммент для краёв */
+  font-size: 120px;
   z-index: 1;
   /* border-style:dotted; border-color:rebeccapurple; */
 }
+
 .feynman__subtitle {
+  margin: 0;
   margin-top: 70px;
-  margin-bottom: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
   /* border-style:dotted; border-color:rebeccapurple;  */
 }
+
 .feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
   /* border-style:double; border-color:aqua; */
 }
+
 .kaufman {
   margin-top: 0;
   padding-bottom: 90px;
@@ -303,6 +339,7 @@
   background-color:#1f1f1f;
   /*  border-style: dashed; border-color: black; */
 }
+
 .kaufman__triangle {
   width: 877px;
   height: 877px;
@@ -313,17 +350,20 @@
   background-image: url(../images/kaufman-triangle.svg);
   /* border-style:double; border-color:aqua; */
 }
+
 .footer {
   min-height: 350px;
   margin: 0;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   background-color:#1f1f1f;
   color: white;
   /* border-style: solid; border-color: red;  */
 }
+
 .footer__columns {
   margin: 0;
   width: 90%;
@@ -333,40 +373,52 @@
   justify-content: flex-start;
   /* border-style: dashed; border-color: white; */
 }
+
 .footer__column {
   margin: 0;
   padding: 0;
   display: flex;
   flex-basis: 711px;
   max-width: 50%;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* border-style:double; border-color:aqua;  */
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0 15%;
+  /* border-style:double; border-color:aqua; */
 }
+
 .footer__column_content_copyright {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-basis: 711px;
+  max-width: 50%;
+  flex-direction: column;
   justify-content: space-between;
   /* border-style:dotted; border-color:cadetblue;  */
 }
+
 .logo_place_footer {
   /* border-style:dotted; border-color:cadetblue;  */
 }
-.footer__columns>.footer__column.footer__column_content_copyright + * {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-basis: 711px;
-  gap: 0 15%;
-  justify-content: flex-end;
-}                                                                           /* technical flex container 4 2 cols justify after copyright'a */
+
 .footer__column_content_info {
   max-width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   /* border-style:dotted; border-color:cadetblue; */
 }
+
 .footer__column_content_social {
   max-width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   /* border-style:dotted; border-color:cadetblue; */
 }
+
 .footer__author {
+  margin: 0;
   margin-top: 18px;
   margin-bottom: 18px;
   line-height: 25px;
@@ -374,6 +426,7 @@
   font-weight: normal;
   /* border-style:dotted; border-color:cadetblue; */
 }
+
 .footer__column-heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -382,6 +435,7 @@
   font-weight: 600;
   /* border-style:dotted; border-color:cadetblue;  */
 }
+
 .footer__column-links {
   margin: 0;
   padding-left: 0;
@@ -389,6 +443,7 @@
   list-style-type: none;
   /* border-style:dotted; border-color:cadetblue; */
 }
+
 .footer__column-link {
   margin: 0;
   line-height: 30px;
@@ -398,11 +453,12 @@
   font-weight: normal;
   /* border-style:dotted; border-color:cadetblue; */
 }
+
 .footer__social-icon {
   margin: 0;
   margin-right: 10px;
   width: 16px;
   height: 16px;
   align-self: center;
-  /* border-style:dotted; border-color:cadetblue; */
+  /* border-style:dotted; border-color:cadetblue;  */
 }
