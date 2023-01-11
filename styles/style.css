@@ -46,7 +46,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  line-height: 18px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   z-index: 2;
@@ -279,7 +279,6 @@
 .feynman__subtitle {
   margin: 0;
   margin-top: 70px;
-  margin-left: 150px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
