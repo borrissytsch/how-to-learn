@@ -1,0 +1,9 @@
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  background-size: cover;
+  background-image: var(--kaufman_triangle-image);
+}                                                                                                                                                                                                         /* border-style:double; border-color:aqua; */

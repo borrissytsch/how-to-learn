@@ -1,0 +1,8 @@
+.techniques {
+  margin: 0 auto 100px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+}                                                                                                                                                                                                         /* border-style: dashed; border-color: black; */

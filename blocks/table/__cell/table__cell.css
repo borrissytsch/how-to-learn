@@ -1,0 +1,8 @@
+.table__cell {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 0;
+  margin-bottom: 0;
+}                                                                                                                                                                                                     /* border-style:dotted; border-color:rebeccapurple; */

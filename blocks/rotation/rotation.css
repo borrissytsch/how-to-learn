@@ -1,0 +1,11 @@
+@keyframes furote {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: furote 20s linear infinite;
+}
